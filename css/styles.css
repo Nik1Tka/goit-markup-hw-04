@@ -50,6 +50,7 @@ p {
   align-items: center;
   padding-top: 24px;
   padding-bottom: 24px;
+  justify-content: space-between;
 }
 
 .page-nav {
@@ -59,9 +60,23 @@ p {
 .menu {
   gap: 40px;
   display: flex;
+  position: relative;
 }
 .menu-nav {
   font-style: normal;
+}
+.stud-aft::after {
+  content: '';
+  display: block;
+  margin-top: 20px;
+  border-radius: 2px;
+  width: 48px;
+  height: 4px;
+  position: absolute;
+  background-color: #404bbf;
+}
+.stud-aft:hover .stud-aft:focus {
+  color: #404bbf;
 }
 .menu-info {
   display: flex;
@@ -88,6 +103,15 @@ p {
 
 .hero {
   background: #2e2f42;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/hero/of-hero.jpg.jpg);
+  background-size: cover;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-container {
@@ -110,6 +134,7 @@ p {
   width: 115px;
   height: 24px;
 }
+
 .menu-top-log {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -168,6 +193,21 @@ p {
   padding: 120px 0;
 }
 
+.desc-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  height: 112px;
+  margin-bottom: 8px;
+  background-color: #f4f4fd;
+}
+
+.desc-icon {
+  fill: #2e2f42;
+}
+
 .description-title {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
@@ -209,6 +249,27 @@ p {
   background-color: #f4f4fd;
   display: flex;
   padding: 120px 0;
+}
+.icon-menu {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  padding-bottom: 32px;
+}
+
+.icon-links-list {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  border-radius: 50% 50%;
+  background-color: #4d5ae5;
+  justify-content: center;
+  align-items: center;
+}
+.icon-link {
+  fill: #f4f4fd;
+  width: 16px;
+  height: 16px;
 }
 .team-title {
   font-family: 'Roboto', sans-serif;
@@ -254,6 +315,31 @@ p {
 }
 /*=== Our Portfolio ===*/
 
+.portfolio-box {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-overlay {
+  position: absolute;
+  background-color: #4d5ae5;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  transform: translateY(100%);
+  padding-top: 40px;
+  padding-right: 32px;
+  padding-left: 32px;
+}
+
+.portfolio-box:hover .portfolio-overlay {
+  transform: translateY(0%);
+}
 .portfolio-title {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
@@ -291,6 +377,7 @@ p {
 
 .portfolio-list-item {
   width: calc((100% - 48px) / 3);
+  position: relative;
 }
 
 .portfolio-list-conteiner {
@@ -304,6 +391,9 @@ p {
   padding-bottom: 120px;
 }
 /*=== footer ===*/
+.footer-logo-box {
+  margin-right: 120px;
+}
 .page-footer {
   background-color: #2e2f42;
   padding-top: 100px;
@@ -337,4 +427,48 @@ p {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #f4f4fd;
+}
+.foot-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.foot-box {
+}
+
+.foot-links-list {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  background-color: #4d5ae5;
+  border-radius: 50% 50%;
+  justify-content: center;
+  align-items: center;
+  fill: #f4f4fd;
+}
+
+.icon-link-foot {
+  width: 24px;
+  height: 24px;
+}
+
+.foot-txt {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.page-footer .container {
+  display: flex;
+  align-items: baseline;
+}
+
+.foot-links-list:hover {
+  background-color: #31d0aa;
 }
