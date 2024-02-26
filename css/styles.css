@@ -67,12 +67,16 @@ p {
 .menu-nav {
   font-style: normal;
 }
+
+.stud-aft {
+  color: #404bbf;
+}
 .stud-aft::after {
   content: '';
   display: block;
   margin-top: 20px;
   border-radius: 2px;
-  width: 48px;
+  width: 100%;
   height: 4px;
   position: absolute;
   background-color: #404bbf;
@@ -103,6 +107,7 @@ p {
   padding: 24px 0;
   display: block;
   transition: background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  position: relative;
 }
 
 .hero {
@@ -139,7 +144,6 @@ p {
   margin-right: 76px;
   width: 115px;
   height: 24px;
-  position: relative;
 }
 
 .menu-top-log {
