@@ -464,8 +464,6 @@ p {
 }
 
 .icon-link-foot {
-  width: 24px;
-  height: 24px;
 }
 
 .foot-txt {
@@ -483,6 +481,7 @@ p {
   align-items: baseline;
 }
 
-.foot-links-list:hover {
+.foot-links-list:hover,
+.foot-links-list:focus {
   background-color: #31d0aa;
 }
